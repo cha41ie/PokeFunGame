@@ -1,0 +1,34 @@
+h1{
+    font-weight: bold;
+}
+        
+.entity-nav{
+    display: flex;
+    justify-content: end;
+    column-gap: 5px;
+    padding: 10px 0px
+}
+
+
+.entity-nav-preview::before{
+    content: "◂ ";
+}
+.entity-nav-next::after{
+     content: "▸";
+}
+
+.entity-nav-next, .entity-nav-preview{
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.entity-nav-next:hover, .entity-nav-preview:hover{
+    background-color: #a7a19f67;
+    color: rgb(60, 52, 102);
+}   
+
+
+#EVOLUTION{
+    display: flex;
+    justify-content: space-around;
+}
