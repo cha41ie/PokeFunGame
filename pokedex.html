@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="styles/stylemain.css">
+    <link rel="stylesheet" href="styles/styletypes.css">
+    <style>
+    </style>
+</head>
+<body>
+    <header>
+        logo - center
+    </header>
+    <nav>
+        <menu>
+            <li>
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="main-menu-icon img-fixed" width="24" height="24" aria-label="Pokeball icon" role="img">
+                        <g fill="#00000">
+                            <path d="M229.7 36.8A220.9 220.9 0 0 0 37.5 224.9l-.4 4.3h106.5l1.4-4.7a116.3 116.3 0 0 1 73-77.5 114.7 114.7 0 0 1 149 79l.9 3.2H475l-1.7-10.1A220 220 0 0 0 281 36.7c-12-1.4-39.3-1.4-51.2 0z"></path>
+                            <path d="M239.7 185a74 74 0 0 0-49.7 40.3 73 73 0 0 0 15.4 82.3 72.1 72.1 0 0 0 101.9-1.2 68.8 68.8 0 0 0 20.6-50.7 69.1 69.1 0 0 0-21-51.2 73.3 73.3 0 0 0-33-19c-7.6-2.1-26.4-2.3-34.2-.5z"></path>
+                            <path d="M37.5 286.3a220.5 220.5 0 0 0 436 4.5l1.5-8.9H367.9l-1 3.2a130 130 0 0 1-17.7 37.6 144 144 0 0 1-26.9 26.8 142 142 0 0 1-30.7 15.4 96.3 96.3 0 0 1-35.8 5.3 90 90 0 0 1-22.5-1.7 114 114 0 0 1-58.6-31.7 110.1 110.1 0 0 1-28.3-46l-2.9-8.9H37l.6 4.4h-.1z"></path>
+                        </g>
+                    </svg> 
+                <span>main</span>
+                </a>
+       
+            </li>
+            <li>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="main-menu-icon img-fixed" width="24" height="24" aria-label="Pokeball icon" role="img">
+                        <g fill="#00000">
+                            <path d="M229.7 36.8A220.9 220.9 0 0 0 37.5 224.9l-.4 4.3h106.5l1.4-4.7a116.3 116.3 0 0 1 73-77.5 114.7 114.7 0 0 1 149 79l.9 3.2H475l-1.7-10.1A220 220 0 0 0 281 36.7c-12-1.4-39.3-1.4-51.2 0z"></path>
+                            <path d="M239.7 185a74 74 0 0 0-49.7 40.3 73 73 0 0 0 15.4 82.3 72.1 72.1 0 0 0 101.9-1.2 68.8 68.8 0 0 0 20.6-50.7 69.1 69.1 0 0 0-21-51.2 73.3 73.3 0 0 0-33-19c-7.6-2.1-26.4-2.3-34.2-.5z"></path>
+                            <path d="M37.5 286.3a220.5 220.5 0 0 0 436 4.5l1.5-8.9H367.9l-1 3.2a130 130 0 0 1-17.7 37.6 144 144 0 0 1-26.9 26.8 142 142 0 0 1-30.7 15.4 96.3 96.3 0 0 1-35.8 5.3 90 90 0 0 1-22.5-1.7 114 114 0 0 1-58.6-31.7 110.1 110.1 0 0 1-28.3-46l-2.9-8.9H37l.6 4.4h-.1z"></path>
+                        </g>
+                    </svg>
+                <span>pokedex</span></a>
+            </li>
+            <li>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="main-menu-icon img-fixed" width="24" height="24" aria-label="Pokeball icon" role="img">
+                        <g fill="#00000">
+                            <path d="M229.7 36.8A220.9 220.9 0 0 0 37.5 224.9l-.4 4.3h106.5l1.4-4.7a116.3 116.3 0 0 1 73-77.5 114.7 114.7 0 0 1 149 79l.9 3.2H475l-1.7-10.1A220 220 0 0 0 281 36.7c-12-1.4-39.3-1.4-51.2 0z"></path>
+                            <path d="M239.7 185a74 74 0 0 0-49.7 40.3 73 73 0 0 0 15.4 82.3 72.1 72.1 0 0 0 101.9-1.2 68.8 68.8 0 0 0 20.6-50.7 69.1 69.1 0 0 0-21-51.2 73.3 73.3 0 0 0-33-19c-7.6-2.1-26.4-2.3-34.2-.5z"></path>
+                            <path d="M37.5 286.3a220.5 220.5 0 0 0 436 4.5l1.5-8.9H367.9l-1 3.2a130 130 0 0 1-17.7 37.6 144 144 0 0 1-26.9 26.8 142 142 0 0 1-30.7 15.4 96.3 96.3 0 0 1-35.8 5.3 90 90 0 0 1-22.5-1.7 114 114 0 0 1-58.6-31.7 110.1 110.1 0 0 1-28.3-46l-2.9-8.9H37l.6 4.4h-.1z"></path>
+                        </g>
+                    </svg>
+                <span>effectiveness</span></a>
+            </li>
+            <li>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="main-menu-icon img-fixed" width="24" height="24" aria-label="Pokeball icon" role="img">
+                        <g fill="#00000">
+                            <path d="M229.7 36.8A220.9 220.9 0 0 0 37.5 224.9l-.4 4.3h106.5l1.4-4.7a116.3 116.3 0 0 1 73-77.5 114.7 114.7 0 0 1 149 79l.9 3.2H475l-1.7-10.1A220 220 0 0 0 281 36.7c-12-1.4-39.3-1.4-51.2 0z"></path>
+                            <path d="M239.7 185a74 74 0 0 0-49.7 40.3 73 73 0 0 0 15.4 82.3 72.1 72.1 0 0 0 101.9-1.2 68.8 68.8 0 0 0 20.6-50.7 69.1 69.1 0 0 0-21-51.2 73.3 73.3 0 0 0-33-19c-7.6-2.1-26.4-2.3-34.2-.5z"></path>
+                            <path d="M37.5 286.3a220.5 220.5 0 0 0 436 4.5l1.5-8.9H367.9l-1 3.2a130 130 0 0 1-17.7 37.6 144 144 0 0 1-26.9 26.8 142 142 0 0 1-30.7 15.4 96.3 96.3 0 0 1-35.8 5.3 90 90 0 0 1-22.5-1.7 114 114 0 0 1-58.6-31.7 110.1 110.1 0 0 1-28.3-46l-2.9-8.9H37l.6 4.4h-.1z"></path>
+                        </g>
+                    </svg>
+                    <span>encounter</span>
+                </a>   
+            </li>
+        </menu>
+    </nav>
+    <main>
+        <h1>POKEDEX</h1>
+        <div class="info">
+            <p>jebać łysego</p>
+        </div>
+        <div class="container">
+            <div class="pokemon" id="001">
+                <a href="pokedex/001.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/rookidee.png" alt="rookidee">
+                <div class="numbers">
+                    <p>#001</p>
+                    <p>Rookiediee</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type FLYING" href="types/flying.html">flying</a>
+                </div>
+                
+            </div>
+            <div class="pokemon" id="002">
+                <a href="pokedex/002.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/corvisquire.png" alt="corvisquire">
+                <div class="numbers">
+                    <p>#002</p>
+                    <p>corvisquire</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type STEEL" href="types/steel.html">steel</a>
+                    <a class="type FLYING" href="types/flying.html">flying</a>
+                </div>
+                
+            </div>
+            <div class="pokemon" id="003">
+                <a href="pokedex/003.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/corviknight.png" alt="corviknight">
+                <div class="numbers">
+                    <p>#003</p>
+                    <p>corviknight</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type STEEL" href="types/steel.html">steel</a>
+                    <a class="type FLYING" href="types/flying.html">flying</a>
+                </div>
+                
+            </div>
+            <div class="pokemon" id="004">
+                <a href="pokedex/004.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/mankey.png" alt="mankey">
+                <div class="numbers">
+                    <p>#004</p>
+                    <p>mankey</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type FIGHTING" href="types/fighting.html">fighting</a>
+                </div>
+                
+            </div>
+            <div class="pokemon" id="005">
+                <a href="pokedex/005.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/primeape.png" alt="primeape">
+                <div class="numbers">
+                    <p>#005</p>
+                    <p>primeape</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type FIGHTING" href="types/fighting.html">fighting</a>
+                </div>
+            </div>
+            <div class="pokemon" id="006">
+                <a href="pokedex/006.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/annihilape.png" alt="annihilape">
+                <div class="numbers">
+                    <p>#006</p>
+                    <p>annihilape</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type FIGHTING" href="types/fighting.html">fighting</a>
+                    <a class="type GHOST" href="types/ghost.html">ghost</a>
+                </div>
+                
+            </div>
+            <div class="pokemon" id="007">
+                <a href="pokedex/007.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/rolycoly.png" alt="rolycoly">
+                <div class="numbers">
+                    <p>#007</p>
+                    <p>rolycoly</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type ROCK" href="types/rock.html">rock</a>
+                </div>
+            </div>
+            <div class="pokemon" id="008">
+                <a href="pokedex/008.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/carkol.png" alt="carkol">
+                <div class="numbers">
+                    <p>#008</p>
+                    <p>carkol</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type ROCK" href="types/rock.html">rock</a>
+                    <a class="type FIRE" href="types/fire.html">fire</a>
+                </div>
+            </div>
+            <div class="pokemon" id="009">
+                <a href="pokedex/009.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/coalossal.png" alt="coalossal">
+                <div class="numbers">
+                    <p>#009</p>
+                    <p>coalossal</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type ROCK" href="types/rock.html">rock</a>
+                    <a class="type FIRE" href="types/fire.html">fire</a>
+                </div>
+            </div>
+            <div class="pokemon" id="010">
+                <a href="pokedex/010.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/sentret.png" alt="sentret">
+                <div class="numbers">
+                    <p>#010</p>
+                    <p>sentret</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type NORMAL" href="types/normal.html">normal</a>
+                </div>
+            </div>
+            <div class="pokemon" id="011">
+                <a href="pokedex/011.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/furret.png" alt="furret">
+                <div class="numbers">
+                    <p>#011</p>
+                    <p>furret</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type NORMAL" href="types/normal.html">normal</a>
+                </div>
+            </div>
+            <div class="pokemon" id="012">
+                <a href="pokedex/012.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/poochyena.png" alt="poochyena">
+                <div class="numbers">
+                    <p>#012</p>
+                    <p>poochyena</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type DARK" href="types/dark.html">dark</a>
+                </div>
+            </div>
+            <div class="pokemon" id="013">
+                <a href="pokedex/013.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/mightyena.png" alt="mightyena">
+                <div class="numbers">
+                    <p>#013</p>
+                    <p>mightyena</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type DARK" href="types/dark.html">dark</a>
+                </div>
+            </div>
+            <div class="pokemon" id="014">
+                <a href="pokedex/014.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/starly.png" alt="starly">
+                <div class="numbers">
+                    <p>#014</p>
+                    <p>starly</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type NORMAL" href="types/normal.html">normal</a>
+                    <a class="type FLYING" href="types/flying.html">flying</a>
+                </div>
+            </div>
+            <div class="pokemon" id="015">
+                <a href="pokedex/015.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/staravia.png" alt="staravia">
+                <div class="numbers">
+                    <p>#015</p>
+                    <p>staravia</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type NORMAL" href="types/normal.html">normal</a>
+                    <a class="type FLYING" href="types/flying.html">flying</a>
+                </div>
+            </div>
+            <div class="pokemon" id="016">
+                <a href="pokedex/016.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/staraptor.png" alt="staraptor">
+                <div class="numbers">
+                    <p>#016</p>
+                    <p>staraptor</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type NORMAL" href="types/normal.html">normal</a>
+                    <a class="type FLYING" href="types/flying.html">flying</a>
+                </div>
+            </div>
+            <div class="pokemon" id="017">
+                <a href="pokedex/017.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/fletchling.png" alt="fletchling">
+                <div class="numbers">
+                    <p>#017</p>
+                    <p>fletchling</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type NORMAL" href="types/normal.html">normal</a>
+                    <a class="type FLYING" href="types/flying.html">flying</a>
+                </div>
+            </div>
+            <div class="pokemon" id="018">
+                <a href="pokedex/018.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/fletchinder.png" alt="fletchinder">
+                <div class="numbers">
+                    <p>#018</p>
+                    <p>fletchinder</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type FIRE" href="types/fire.html">fire</a>
+                    <a class="type FLYING" href="types/flying.html">flying</a>
+                </div>
+            </div>
+            <div class="pokemon" id="019">
+                <a href="pokedex/019.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/talonflame.png" alt="talonflame">
+                <div class="numbers">
+                    <p>#019</p>
+                    <p>talonflame</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type FIRE" href="types/fire.html">fire</a>
+                    <a class="type FLYING" href="types/flying.html">flying</a>
+                </div>
+            </div>
+            <div class="pokemon" id="020">
+                <a href="pokedex/020.html">
+                <img src="https://img.pokemondb.net/sprites/x-y/normal/pidove.png" alt="pidove">
+                <div class="numbers">
+                    <p>#020</p>
+                    <p>pidove</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type NORMAL" href="types/normal.html">normal</a>
+                    <a class="type FLYING" href="types/flying.html">flying</a>
+                </div>
+            </div>
+            <div class="pokemon" id="021">
+                <a href="pokedex/021.html">
+                <img src="https://img.pokemondb.net/sprites/x-y/normal/tranquill.png" alt="tranquill">
+                <div class="numbers">
+                    <p>#021</p>
+                    <p>tranquill</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type NORMAL" href="types/normal.html">normal</a>
+                    <a class="type FLYING" href="types/flying.html">flying</a>
+                </div>
+            </div>
+            <div class="pokemon" id="022">
+                <a href="pokedex/022.html">
+                <img src="https://img.pokemondb.net/sprites/x-y/normal/unfezant.png" alt="unfezant">
+                <div class="numbers">
+                    <p>#022</p>
+                    <p>unfezant</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type NORMAL" href="types/normal.html">normal</a>
+                    <a class="type FLYING" href="types/flying.html">flying</a>
+                </div>
+            </div>
+            <div class="pokemon" id="023">
+                <a href="pokedex/023.html">
+                <img src="https://img.pokemondb.net/sprites/x-y/normal/wurmple.png" alt="wurmple">
+                <div class="numbers">
+                    <p>#023</p>
+                    <p>wurmple</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type BUG" href="types/bug.html">bug</a>
+                </div>
+            </div>
+            <div class="pokemon" id="024">
+                <a href="pokedex/024.html">
+                <img src="https://img.pokemondb.net/sprites/x-y/normal/silcoon.png" alt="silcoon">
+                <div class="numbers">
+                    <p>#024</p>
+                    <p>silcoon</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type BUG" href="types/bug.html">bug</a>
+                </div>
+            </div>
+            <div class="pokemon" id="025">
+                <a href="pokedex/025.html">
+                <img src="https://img.pokemondb.net/sprites/x-y/normal/beautifly.png" alt="beautifly">
+                <div class="numbers">
+                    <p>#025</p>
+                    <p>beautifly</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type BUG" href="types/bug.html">bug</a>
+                    <a class="type FLYING" href="types/flying.html">flying</a>
+                </div>
+            </div>
+            <div class="pokemon" id="026">
+                <a href="pokedex/026.html">
+                <img src="https://img.pokemondb.net/sprites/x-y/normal/cascoon.png" alt="cascoon">
+                <div class="numbers">
+                    <p>#026</p>
+                    <p>cascoon</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type BUG" href="types/bug.html">bug</a>
+                </div>
+            </div>
+            <div class="pokemon" id="027">
+                <a href="pokedex/027.html">
+                <img src="https://img.pokemondb.net/sprites/x-y/normal/dustox.png" alt="dustox">
+                <div class="numbers">
+                    <p>#027</p>
+                    <p>dustox</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type BUG" href="types/bug.html">bug</a>
+                    <a class="type POISON" href="types/poison.html">poison</a>
+                </div>
+            </div>
+            <div class="pokemon" id="028">
+                <a href="pokedex/028.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/scatterbug.png" alt="scatterbug">
+                <div class="numbers">
+                    <p>#028</p>
+                    <p>scatterbug</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type BUG" href="types/bug.html">bug</a>
+                </div>
+            </div>
+            <div class="pokemon" id="029">
+                <a href="pokedex/029.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/spewpa.png" alt="spewpa">
+                <div class="numbers">
+                    <p>#029</p>
+                    <p>spewpa</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type BUG" href="types/bug.html">bug</a>
+                </div>
+            </div>
+            <div class="pokemon" id="030">
+                <a href="pokedex/030.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/vivillon.png" alt="vivillon">
+                <div class="numbers">
+                    <p>#030</p>
+                    <p>vivillon</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type BUG" href="types/bug.html">bug</a>
+                    <a class="type FLYING" href="types/FLYING.html">bug</a>
+                </div>
+            </div>
+            <div class="pokemon" id="031">
+                <a href="pokedex/031.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/grubbin.png" alt="grubbin">
+                <div class="numbers">
+                    <p>#031</p>
+                    <p>grubbin</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type BUG" href="types/bug.html">bug</a>
+                </div>
+            </div>
+            <div class="pokemon" id="032">
+                <a href="pokedex/032.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/charjabug.png" alt="charjabug">
+                <div class="numbers">
+                    <p>#032</p>
+                    <p>charjabug</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type BUG" href="types/bug.html">bug</a>
+                    <a class="type ELECTRIC" href="types/electric.html">electric</a>
+                </div>
+            </div>
+            <div class="pokemon" id="033">
+                <a href="pokedex/033.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/vikavolt.png" alt="vikavolt">
+                <div class="numbers">
+                    <p>#033</p>
+                    <p>vikavolt</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type BUG" href="types/bug.html">bug</a>
+                    <a class="type ELECTRIC" href="types/electric.html">electric</a>
+                </div>
+            </div>
+            <div class="pokemon" id="034">
+                <a href="pokedex/034.html">
+                <img src="https://img.pokemondb.net/sprites/x-y/normal/purrloin.png" alt="purrloin">
+                <div class="numbers">
+                    <p>#034</p>
+                    <p>purrloin</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type DARK" href="types/dark.html">dark</a>
+                </div>
+            </div>
+            <div class="pokemon" id="035">
+                <a href="pokedex/035.html">
+                <img src="https://img.pokemondb.net/sprites/x-y/normal/liepard.png" alt="liepard">
+                <div class="numbers">
+                    <p>#035</p>
+                    <p>liepard</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type WPISZTYP" href="types/typ.html">typ</a>
+                </div>
+            </div>
+            <div class="pokemon" id="036">
+                <a href="pokedex/036.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/shinx.png" alt="shinx">
+                <div class="numbers">
+                    <p>#036</p>
+                    <p>shinx</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type ELECTRIC" href="types/electric.html">electric</a>
+                </div>
+            </div>
+            <div class="pokemon" id="037">
+                <a href="pokedex/037.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/luxio.png" alt="luxio">
+                <div class="numbers">
+                    <p>#037</p>
+                    <p>luxio</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type ELECTRIC" href="types/electric.html">electric</a>
+                </div>
+            </div>
+            <div class="pokemon" id="038">
+                <a href="pokedex/038.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/luxray.png" alt="luxray">
+                <div class="numbers">
+                    <p>#038</p>
+                    <p>luxray</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type ELECTRIC" href="types/electric.html">electric</a>
+                </div>
+            </div>
+            <div class="pokemon" id="039">
+                <a href="pokedex/039.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/lotad.png" alt="lotad">
+                <div class="numbers">
+                    <p>#039</p>
+                    <p>lotad</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type WATER" href="types/water.html">water</a>
+                    <a class="type GRASS" href="types/grass.html">grass</a>
+                </div>
+            </div>
+            <div class="pokemon" id="040">
+                <a href="pokedex/040.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/lombre.png" alt="lombre">
+                <div class="numbers">
+                    <p>#040</p>
+                    <p>lombre</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type WATER" href="types/water.html">water</a>
+                    <a class="type GRASS" href="types/grass.html">grass</a>
+                </div>
+            </div>
+            <div class="pokemon" id="041">
+                <a href="pokedex/041.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/ludicolo.png" alt="ludicolo">
+                <div class="numbers">
+                    <p>#041</p>
+                    <p>ludicolo</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type WATER" href="types/water.html">water</a>
+                    <a class="type GRASS" href="types/grass.html">grass</a>040
+                </div>
+            </div>
+            <div class="pokemon" id="042">
+                <a href="pokedex/042.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/cutiefly.png" alt="cutiefly">
+                <div class="numbers">
+                    <p>#042</p>
+                    <p>cutiefly</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type BUG" href="types/bug.html">bug</a>
+                    <a class="type FAIRY" href="types/fairy.html">fairy</a>
+                </div>
+            </div>
+            <div class="pokemon" id="043">
+                <a href="pokedex/043.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/ribombee.png" alt="ribombee">
+                <div class="numbers">
+                    <p>#043</p>
+                    <p>ribombee</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type BUG" href="types/bug.html">bug</a>
+                    <a class="type FAIRY" href="types/fairy.html">fairy</a>
+                </div>
+            </div>
+            <div class="pokemon" id="000">
+                <a href="pokedex/000.html">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/nazwa.png" alt="nazwa">
+                <div class="numbers">
+                    <p>#000</p>
+                    <p>nazwa</p>
+                </div>
+                </a>
+                <div class="typy">
+                    <a class="type WPISZTYP" href="types/typ.html">typ</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>

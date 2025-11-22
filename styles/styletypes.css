@@ -1,0 +1,111 @@
+.typy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+}
+
+
+
+.type{
+    font-size: 13px;
+    text-align: center;
+    border: 1.5px, solid;
+    border-radius: 30px;
+    padding: 2px 5px;
+    text-transform: uppercase;
+}
+
+.type:hover{
+    font-weight: bold;
+}
+.NORMAL{
+    color: #797964;
+    border-color: #797964;
+    background-color: #d8d8c675;
+}
+.FIRE{
+    color: #C84E4E;
+    border-color: #C84E4E;
+    background-color: #f4bdbd75;
+}
+.WATER{
+    color: #2894FF;
+    border-color: #2894FF;
+    background-color: #b8c2ff75;
+}
+.ELECTRIC{
+    color: #CC9900;
+    border-color: #CC9900;
+    background-color: #E8D59D75;
+}
+.GRASS{
+    color: #5CB737;
+    border-color: #5CB737;
+    background-color: #C9EABC75;
+}
+.ICE{
+    color: #1BC4EA;
+    border-color: #1BC4EA;
+    background-color: #B6EDF975;
+}
+.FIGHTING{
+    color: #A84D3D;
+    border-color: #A84D3D;
+    background-color: #F2C7C075;
+}
+#POISON{
+    color: #88447A;
+    border-color: #88447A;
+    background-color: #EDC3E475;
+}
+.PSYCHIC{
+    color: #E63A7E;
+    border-color: #E63A7E;
+    background-color: #FFC3DB75;
+}
+.GROUND{
+    color: #A88419;
+    border-color: #A88419;
+    background-color: #FFEDB575;
+}
+.BUG{
+    color: #83901A;
+    border-color: #83901A;
+    background-color: #DDE4A275;
+}
+.FLYING{
+    color: #556DFF;
+    border-color: #556DFF;
+    background-color: #b8c2ff50;
+}
+.DRAGON{
+    color: #4F3BDD;
+    border-color: #4F3BDD;
+    background-color: #CBC4F975;
+}
+.ROCK{
+    color: #89762D;
+    border-color: #89762D;
+    background-color: #D9CFA775;
+}
+.DARK{
+    color: #573E31;
+    border-color: #573E31;
+    background-color: #E9D4CA75;
+}
+.STEEL{
+    color: #8E8EA4;
+    border-color: #8E8EA4;
+    background-color: #E2E2F475;
+}
+.GHOST{
+    color: #515186;
+    border-color: #515186;
+    background-color: #C5C5E675;
+}
+.FAIRY{
+    color: #E76DE7;
+    border-color: #E76DE7;
+    background-color: #F5C6F575;
+}

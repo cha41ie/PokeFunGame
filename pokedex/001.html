@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/stylemain.css">
+    <style>
+        h1{
+            font-weight: bold;
+        }
+        .entity-nav{
+            display: flex;
+            justify-content: end;
+            column-gap: 5px;
+        }
+        .entity-nav-next::after{
+            content: "▸";
+        }
+    </style>
+</head>
+<body>
+    <header>
+        logo - center
+    </header>
+    <nav>
+        <menu>
+            <li><a href="">MAIN</a></li>
+            <li><a href="pokedex.html">POKEDEX</a></li>
+            <li><a href="">TABELA EFEKTYWNOŚĆ</a></li>
+            <li><a href="">ENCOUNTER</a></li>
+        </menu>
+    </nav>
+    <main>
+        <h1>
+            Rookiediee
+        </h1>
+        <div class="entity-nav">
+            <a rel="next" class="entity-nav-next" href="/pokedex/002.html" > #002 Corvisquire</a>
+        </div>
+        <ul>
+            <li><a href="/pokedex/001.html#DATA">data</a></li>
+            <li><a href="/pokedex/001.html#TRAINING">training</a></li>
+            <li><a href="/pokedex/001.html#BREEDING">breeding</a></li>
+            <li><a href="/pokedex/001.html#STATS">stats</a></li>
+            <li><a href="/pokedex/001.html#DEFENSES">defenses</a></li>
+            <li><a href="/pokedex/001.html#EVOLUTION">evolution</a></li>
+            <li><a href="/pokedex/001.html#MOVES">moves</a></li>
+            <li><a href="/pokedex/001.html#ROUTES">routes</a></li>
+        </ul>
+    </main>
+</body>
+</html>
