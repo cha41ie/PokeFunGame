@@ -32,3 +32,8 @@ h1{
     display: flex;
     justify-content: space-around;
 }
+
+#EVOLUTION > img{
+    width: 100px;
+    height: 100px;
+}
